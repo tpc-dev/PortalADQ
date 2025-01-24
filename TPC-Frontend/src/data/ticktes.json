@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "title": "Ticket 1",
+        "description": "Description 1",
+        "status": "open",
+        "created": "2022-01-01T23:28:56.782Z"
+    },
+    {
+        "id": 2,
+        "title": "Ticket 2",
+        "description": "Description 2",
+        "status": "open"
+    }
+]

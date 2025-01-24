@@ -1,0 +1,117 @@
+/* ICON */
+
+.ant-input-password-icon {
+    cursor: pointer !important;
+    /* color: var(--color-orange) !important; */
+    padding: 10px !important;
+}
+
+/* MODAL */
+
+.ant-modal-confirm-title {
+    font-weight: 500 !important;
+}
+
+/* TABLE */
+
+.ant-table-thead > tr > th {
+    color: #576278 !important;
+    background-color: #ffffff !important;
+    font-weight: 400 !important;
+    font-size: 13px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.ant-table th,
+.ant-table td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 0;
+}
+
+.ant-table-body::-webkit-scrollbar { 
+    width: 12px !important; 
+} 
+
+.ant-table-body::-webkit-scrollbar-track { 
+    background: #b82a2a !important; 
+} 
+
+.ant-table-body::-webkit-scrollbar-thumb { 
+    background: #c12c2c !important; 
+} 
+
+.ant-table-body::-webkit-scrollbar-thumb:hover { 
+    background: #555 !important; 
+} 
+
+.ant-table-body::-webkit-scrollbar-button { 
+    display: none !important; 
+} 
+
+/* BUTTON */
+
+form .ant-btn {
+    border-radius: 4px !important;
+    height: auto !important;
+}
+
+form.form-expand .ant-btn {
+    padding: 14px 10px !important;
+}
+
+/* FORM */
+
+form#visit .ant-form-item-explain-error {
+    display: none !important;
+}
+
+form.form-expand .ant-input {
+    padding: 14px 12px !important;
+}
+
+form .ant-input-password {
+    padding: 0 !important;
+}
+
+form .ant-input-password .ant-input-suffix {
+    margin: 0 !important;
+}
+
+form .ant-form-item-explain-error {
+    margin-bottom: 10px;
+    padding-left: 6px;
+}
+
+/* INPUT */
+
+.ant-input-affix-wrapper .ant-input-lg { 
+    padding: 7px 12px !important;
+}
+
+.ant-typography {
+    margin-bottom: 0px !important;
+}
+
+.ant-upload,
+.ant-upload button {
+    width: 100% !important;
+}
+
+
+/* SKELETON */
+
+.ant-skeleton .ant-skeleton-content .ant-skeleton-title + .ant-skeleton-paragraph {
+    margin-block-start: 6px !important;
+}
+
+/* STEPS */
+.ant-steps .ant-steps-item-error .ant-steps-item-icon {
+    background-color: #fea8a9 !important;
+    border-color: #fea8a9 !important;
+}
+
+.ant-steps .ant-steps-item-error .ant-steps-item-title {
+    color: #ec797b !important;
+}

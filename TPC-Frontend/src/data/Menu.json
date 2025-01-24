@@ -1,0 +1,80 @@
+[
+    {
+        "label": "Solicitudes",
+        "items": [
+            {
+                "name": "Crear solicitud",
+                "url": "/solicitud"
+            },
+            {
+                "name": "Solicitudes de cotizacion",
+                "url": "/requests"
+            },
+            {
+                "name": "Solicitudes OC",
+                "url": "/requests-oc"
+            }
+        ]
+    },
+    {
+        "label": "Proveedores",
+        "items": [
+            {
+                "name": "Lista de proveedores",
+                "url": "/providers"
+            }
+        ]
+    },
+    {
+        "label": "Administracion",
+        "items": [
+            {
+                "name": "Departamentos",
+                "url": "/departament"
+            },
+            {
+                "name": "Centro de costos",
+                "url": "/cost-center"
+            },
+            {
+                "name": "Orden Estadisticas",
+                "url": "/order-statistics"
+            },
+            {
+                "name": "Usuarios",
+                "url": "/users"
+            },
+            {
+                "name": "Reemplazos",
+                "url": "/replacements"
+            },
+            {
+                "name": "Bien y Servicio",
+                "url": "/bien-servicio"
+            },
+            {
+                "name": "Liberadores",
+                "url": "/liberadores"
+            }
+        ]
+    },
+    {
+        "label": "Contabilidad",
+        "items": [
+            {
+                "name": "Envió correo recepción",
+                "url": "/email-history",
+                "user": "admin"
+            },
+            {
+                "name": "Historial Correos",
+                "url": "/send-email",
+                "user": "admin"
+            },
+            {
+                "name": "Detalle recepción OC",
+                "url": "/detail-reception"
+            }
+        ]
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "id_Ceco": 1,
+        "Nombre": "Ceco 1",
+        "Codigo_Ceco": "CC1"
+    },
+    {
+        "id_Ceco": 2,
+        "Nombre": "Ceco 2",
+        "Codigo_Ceco": "CC2"
+    },
+    {
+        "id_Ceco": 3,
+        "Nombre": "Ceco 3",
+        "Codigo_Ceco": "CC3"
+    },
+    {
+        "id_Ceco": 4,
+        "Nombre": "Ceco 4",
+        "Codigo_Ceco": "CC4"
+    },
+    {
+        "id_Ceco": 5,
+        "Nombre": "Ceco 5",
+        "Codigo_Ceco": "CC5"
+    },
+    {
+        "id_Ceco": 6,
+        "Nombre": "Ceco 6",
+        "Codigo_Ceco": "CC6"
+    },
+    {
+        "id_Ceco": 7,
+        "Nombre": "Ceco 7",
+        "Codigo_Ceco": "CC7"
+    },
+    {
+        "id_Ceco": 8,
+        "Nombre": "Ceco 8",
+        "Codigo_Ceco": "CC8"
+    },
+    {
+        "id_Ceco": 9,
+        "Nombre": "Ceco 9",
+        "Codigo_Ceco": "CC9"
+    },
+    {
+        "id_Ceco": 10,
+        "Nombre": "Ceco 10",
+        "Codigo_Ceco": "CC10"
+    }
+]

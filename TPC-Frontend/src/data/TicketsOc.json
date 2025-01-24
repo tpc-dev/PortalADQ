@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "ticket": "1",
+        "type": "Solicitud con Solped",
+        "status": "Espera liberacion",
+        "solped": "1",
+        "oc": "1",
+        "fecha": "2021-01-01",
+        "provider": "Sodimac",
+        "solicitante": "Juan Perez",
+        "orden_estadistica": "1",
+        "razon_social": "Sodimac"
+    },
+    {
+        "id": 2,
+        "ticket": "2",
+        "type": "Solicitud con Solped",
+        "status": "OC Enviada",
+        "solped": "2",
+        "oc": "99",
+        "fecha": "2021-01-01",
+        "provider": "Sodimac",
+        "solicitante": "Juan Perez",
+        "orden_estadistica": "1",
+        "razon_social": "Sodimac",
+        "partes": [
+            {
+                "id": 1,
+                "pos": "1",
+                "cantidad": "1",
+                "moneda": "Parte 1",
+                "prc_neto": "1",
+                "proveedor": "Unidad",
+                "texto_breve": "1000",
+                "material": "1000",
+                "valor_neto": "1"
+            },
+            {
+                "id": 2,
+                "pos": "1",
+                "cantidad": "1",
+                "moneda": "Parte 1",
+                "prc_neto": "1",
+                "proveedor": "Unidad",
+                "texto_breve": "1000",
+                "material": "1000",
+                "valor_neto": "1"
+            },
+            {
+                "id": 3,
+                "pos": "1",
+                "cantidad": "1",
+                "moneda": "Parte 1",
+                "prc_neto": "1",
+                "proveedor": "Unidad",
+                "texto_breve": "1000",
+                "material": "1000",
+                "valor_neto": "1"
+            },
+            {
+                "id": 4,
+                "pos": "1",
+                "cantidad": "1",
+                "moneda": "Parte 1",
+                "prc_neto": "1",
+                "proveedor": "Unidad",
+                "texto_breve": "1000",
+                "material": "1000",
+                "valor_neto": "1"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "ticket": "3",
+        "type": "Solicitud con Solped",
+        "status": "Espera liberacion",
+        "solped": "3",
+        "oc": "3",
+        "fecha": "2021-01-01",
+        "provider": "Sodimac",
+        "solicitante": "Juan Perez",
+        "orden_estadistica": "1",
+        "razon_social": "Sodimac"
+    },
+    {
+        "id": 4,
+        "type": "Solicitud sin Solped",
+        "ticket": "4",
+        "status": "OC Liberada",
+        "oc": "4",
+        "fecha": "2021-01-04",
+        "detalle": "Detalle de Solicitud",
+        "provider": "Sodimac",
+        "solicitante": "Juan Perez",
+        "orden_estadistica": "1",
+        "razon_social": "Sodimac"
+    }
+]

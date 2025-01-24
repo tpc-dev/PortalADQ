@@ -1,0 +1,32 @@
+[
+    {
+        "id_Departamento": 1,
+        "Nombre": "Amazonas",
+        "Descripcion": "Amazonas es un departamento de Colombia situado en el extremo sur del país. Limita al norte con Colombia, al este con Brasil, al sur con Perú y al oeste con Ecuador. Su capital es Leticia.",
+        "Encargado": "Juan Perez"
+    },
+    {
+        "id_Departamento": 2,
+        "Nombre": "Amazonas",
+        "Descripcion": "Amazonas es un departamento de Colombia situado en el extremo sur del país. Limita al norte con Colombia, al este con Brasil, al sur con Perú y al oeste con Ecuador. Su capital es Leticia.",
+        "Encargado": "Juan Perez"
+    },
+    {
+        "id_Departamento": 3,
+        "Nombre": "San miguel",
+        "Descripcion": "Amazonas es un departamento de Colombia situado en el extremo sur del país. Limita al norte con Colombia, al este con Brasil, al sur con Perú y al oeste con Ecuador. Su capital es Leticia.",
+        "Encargado": "Juan Perez"
+    },
+    {
+        "id_Departamento": 4,
+        "Nombre": "Amazonas",
+        "Descripcion": "Amazonas es un departamento de Colombia situado en el extremo sur del país. Limita al norte con Colombia, al este con Brasil, al sur con Perú y al oeste con Ecuador. Su capital es Leticia.",
+        "Encargado": "Juan Perez"
+    },
+    {
+        "id_Departamento": 5,
+        "Nombre": "Amazonas",
+        "Descripcion": "Amazonas es un departamento de Colombia situado en el extremo sur del país. Limita al norte con Colombia, al este con Brasil, al sur con Perú y al oeste con Ecuador. Su capital es Leticia.",
+        "Encargado": "Juan Perez"
+    }
+]

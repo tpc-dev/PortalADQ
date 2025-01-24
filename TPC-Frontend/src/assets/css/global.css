@@ -1,0 +1,55 @@
+@tailwind base;
+
+@layer base {
+    p {
+        @apply text-sm
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+@import url('./constants.css');
+@import url('./custom-antd.css');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--color-gray);
+}
+
+/* @media (max-width: 1024px) {
+    body {
+        background-color: white;
+    }
+} */
+
+.text-simple {
+    font-family: 'Titillium Web', sans-serif;
+    color: #080808;
+}
+
+.bg-signIn {
+    background: #1135A6;
+    background: -webkit-radial-gradient(111.57% 86.19% at 68.67% 100%, #1135A6 0%, #1d49d9 100%);
+    background: radial-gradient(111.57% 86.19% at 68.67% 100%, #1135A6 0%, #214ddf 100%);
+}
+
+header {
+    box-shadow: 0 0 0.5rem 0 rgb(161 177 204 / 33%);
+}
+
+main {
+    background-color: #1135A6;
+}
+
+::selection {
+    color: white;
+    background: var(--color-blue);
+}
+
+::-moz-selection {
+    color: white;
+    background: var(--color-blue);
+}

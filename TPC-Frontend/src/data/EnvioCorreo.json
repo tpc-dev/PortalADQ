@@ -1,0 +1,67 @@
+    [
+        {
+            "id": 1,
+            "ticket": "0001",
+            "oc": "0001",
+            "solicitante": "Juan Perez",
+            "proveedor": "Proveedor 1",
+            "ceco": "CeCo 1",
+            "fecha_creacion": "2021-01-01",
+            "correos_enviados": 3,
+            "primer_correo": "2021-01-01",
+            "ultimo_correo": "2021-01-03",
+            "recepcion": "2021-01-03"
+        },
+        {
+            "id": 2,
+            "ticket": "0002",
+            "oc": "0002",
+            "solicitante": "Juan Perez",
+            "proveedor": "Proveedor 2",
+            "ceco": "CeCo 2",
+            "fecha_creacion": "2021-01-01",
+            "correos_enviados": 3,
+            "primer_correo": "2021-01-01",
+            "ultimo_correo": "2021-01-03",
+            "recepcion": "2021-01-03"
+        },
+        {
+            "id": 3,
+            "ticket": "0003",
+            "oc": "0003",
+            "solicitante": "Juan Perez",
+            "proveedor": "Proveedor 3",
+            "ceco": "CeCo 3",
+            "fecha_creacion": "2021-01-01",
+            "correos_enviados": 3,
+            "primer_correo": "2021-01-01",
+            "ultimo_correo": "2021-01-03",
+            "recepcion": "2021-01-03"
+        },
+        {
+            "id": 4,
+            "ticket": "0004",
+            "oc": "0004",
+            "solicitante": "Juan Perez",
+            "proveedor": "Proveedor 4",
+            "ceco": "CeCo 4",
+            "fecha_creacion": "2021-01-01",
+            "correos_enviados": 3,
+            "primer_correo": "2021-01-01",
+            "ultimo_correo": "2021-01-03",
+            "recepcion": "2021-01-03"
+        },
+        {
+            "id": 5,
+            "ticket": "0005",
+            "oc": "0005",
+            "solicitante": "Juan Perez",
+            "proveedor": "Proveedor 5",
+            "ceco": "CeCo 5",
+            "fecha_creacion": "2021-01-01",
+            "correos_enviados": 3,
+            "primer_correo": "2021-01-01",
+            "ultimo_correo": "2021-01-03",
+            "recepcion": "2021-01-03"
+        }
+    ]

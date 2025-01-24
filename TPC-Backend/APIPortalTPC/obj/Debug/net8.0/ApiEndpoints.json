@@ -1,0 +1,2341 @@
+[
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorArchivo",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorArchivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorArchivo",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorArchivo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "A",
+        "Type": "BaseDatosTPC.Archivo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Archivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorArchivo",
+    "Method": "Get",
+    "RelativePath": "api/ControladorArchivo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorArchivo",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorArchivo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "A",
+        "Type": "BaseDatosTPC.Archivo",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Archivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorAutentizar",
+    "Method": "ValidarCorreo",
+    "RelativePath": "api/ControladorAutentizar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postrq",
+        "Type": "BaseDatosTPC.PostRq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorAutentizar",
+    "Method": "MFA1",
+    "RelativePath": "api/ControladorAutentizar/MFA",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mfa",
+        "Type": "BaseDatosTPC.MFA",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorAutentizar",
+    "Method": "NuevoUsuario",
+    "RelativePath": "api/ControladorAutentizar/nuevo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postrq",
+        "Type": "BaseDatosTPC.PostRq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorAutentizar",
+    "Method": "RecuperarContrase\u00F1a",
+    "RelativePath": "api/ControladorAutentizar/pass",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Correo",
+        "Type": "BaseDatosTPC.PostRq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorBienServicio",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorBienServicio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorBienServicio",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorBienServicio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bs",
+        "Type": "BaseDatosTPC.BienServicio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.BienServicio",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorBienServicio",
+    "Method": "Get",
+    "RelativePath": "api/ControladorBienServicio/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorBienServicio",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorBienServicio/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bs",
+        "Type": "BaseDatosTPC.BienServicio",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.BienServicio",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorBienServicio",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorBienServicio/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.BienServicio",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorBienServicio",
+    "Method": "GetNombre",
+    "RelativePath": "api/ControladorBienServicio/Nombre/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCentroCosto",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorCentroCosto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCentroCosto",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorCentroCosto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CeCo",
+        "Type": "BaseDatosTPC.CentroCosto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.CentroCosto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCentroCosto",
+    "Method": "Get",
+    "RelativePath": "api/ControladorCentroCosto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCentroCosto",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorCentroCosto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "C",
+        "Type": "BaseDatosTPC.CentroCosto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.CentroCosto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCentroCosto",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorCentroCosto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.CentroCosto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCorreo",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorCorreo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCorreo",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorCorreo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "C",
+        "Type": "BaseDatosTPC.Correo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Correo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCorreo",
+    "Method": "Get",
+    "RelativePath": "api/ControladorCorreo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCorreo",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorCorreo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "C",
+        "Type": "BaseDatosTPC.Correo",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Correo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorCotizacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorCotizacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID_Cotizacion",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id_Solicitante",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdS",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fecha_Creacion_Cotizacion",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bien_Servicio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id_Bien_Servicio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Detalle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Solped",
+        "Type": "System.Nullable\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Activado",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Cotizacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "Get",
+    "RelativePath": "api/ControladorCotizacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorCotizacion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "c",
+        "Type": "BaseDatosTPC.Cotizacion",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Cotizacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorCotizacion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Cotizacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "GetArchivo",
+    "RelativePath": "api/ControladorCotizacion/Archivo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Archivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorCotizacion",
+    "Method": "DescargarExcel",
+    "RelativePath": "api/ControladorCotizacion/Imprimir",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamento",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorDepartamento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamento",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorDepartamento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "D",
+        "Type": "BaseDatosTPC.Departamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Departamento",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamento",
+    "Method": "Get",
+    "RelativePath": "api/ControladorDepartamento/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamento",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorDepartamento/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "D",
+        "Type": "BaseDatosTPC.Departamento",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Departamento",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamento",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorDepartamento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Departamento",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamentoUsuario",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorDepartamentoUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamentoUsuario",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorDepartamentoUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "A",
+        "Type": "BaseDatosTPC.DepartamentoUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.DepartamentoUsuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamentoUsuario",
+    "Method": "Get",
+    "RelativePath": "api/ControladorDepartamentoUsuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorDepartamentoUsuario",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorDepartamentoUsuario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "A",
+        "Type": "BaseDatosTPC.DepartamentoUsuario",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.DepartamentoUsuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorEnviarCorreo",
+    "Method": "EnviarVariosProveedores",
+    "RelativePath": "api/ControladorEnviarCorreo/Proveedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Asunto",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "iD_Bien_Servicio",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mensaje",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Proveedor",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id_Cotizacion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorEnviarCorreo",
+    "Method": "VariosLiberadores",
+    "RelativePath": "api/ControladorEnviarCorreo/VariosLiberadores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LID",
+        "Type": "BaseDatosTPC.ListaID",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorEnviarCorreo",
+    "Method": "VariosReceptores",
+    "RelativePath": "api/ControladorEnviarCorreo/VariosReceptores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LID",
+        "Type": "BaseDatosTPC.ListaID",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorExcel",
+    "Method": "ExcelBS",
+    "RelativePath": "api/ControladorExcel/BS",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorExcel",
+    "Method": "ExcelCeCo",
+    "RelativePath": "api/ControladorExcel/CeCo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorExcel",
+    "Method": "ActualizarOC",
+    "RelativePath": "api/ControladorExcel/OCA",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorExcel",
+    "Method": "ExcelPos",
+    "RelativePath": "api/ControladorExcel/poss",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorExcel",
+    "Method": "ExcelProveedores",
+    "RelativePath": "api/ControladorExcel/Proveedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorExcel",
+    "Method": "ExcelProveedor",
+    "RelativePath": "api/ControladorExcel/Proveedores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorLiberadores",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorLiberadores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorLiberadores",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorLiberadores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "L",
+        "Type": "BaseDatosTPC.Liberadores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Liberadores",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorLiberadores",
+    "Method": "Get",
+    "RelativePath": "api/ControladorLiberadores/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorLiberadores",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorLiberadores/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "L",
+        "Type": "BaseDatosTPC.Liberadores",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Liberadores",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenCompra",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorOrdenCompra",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenCompra",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorOrdenCompra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OC",
+        "Type": "BaseDatosTPC.OrdenCompra",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenCompra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenCompra",
+    "Method": "Get",
+    "RelativePath": "api/ControladorOrdenCompra/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenCompra",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorOrdenCompra/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OC",
+        "Type": "BaseDatosTPC.OrdenCompra",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenCompra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenCompra",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorOrdenCompra/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenCompra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenCompra",
+    "Method": "DescargarExcel",
+    "RelativePath": "api/ControladorOrdenCompra/Imprimir",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenesEstadisticas",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorOrdenesEstadisticas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenesEstadisticas",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorOrdenesEstadisticas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OE",
+        "Type": "BaseDatosTPC.OrdenesEstadisticas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenesEstadisticas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenesEstadisticas",
+    "Method": "Get",
+    "RelativePath": "api/ControladorOrdenesEstadisticas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenesEstadisticas",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorOrdenesEstadisticas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OE",
+        "Type": "BaseDatosTPC.OrdenesEstadisticas",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenesEstadisticas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorOrdenesEstadisticas",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorOrdenesEstadisticas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenesEstadisticas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorProveedores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorProveedores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "BaseDatosTPC.Proveedores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Proveedores",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "Get",
+    "RelativePath": "api/ControladorProveedores/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorProveedores/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "P",
+        "Type": "BaseDatosTPC.Proveedores",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Proveedores",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorProveedores/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Proveedores",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "GetBienServicio",
+    "RelativePath": "api/ControladorProveedores/BienServicio/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRecepcion",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorRecepcion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRecepcion",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorRecepcion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "R",
+        "Type": "BaseDatosTPC.Recepcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Recepcion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRecepcion",
+    "Method": "Get",
+    "RelativePath": "api/ControladorRecepcion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRecepcion",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorRecepcion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "R",
+        "Type": "BaseDatosTPC.Recepcion",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Recepcion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorReemplazos",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorReemplazos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorReemplazos",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorReemplazos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "R",
+        "Type": "BaseDatosTPC.Reemplazos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Reemplazos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorReemplazos",
+    "Method": "Get",
+    "RelativePath": "api/ControladorReemplazos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorReemplazos",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorReemplazos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "R",
+        "Type": "BaseDatosTPC.Reemplazos",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Reemplazos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorReemplazos",
+    "Method": "FinRemplazo",
+    "RelativePath": "api/ControladorReemplazos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Reemplazos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRelacion",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorRelacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRelacion",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorRelacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "R",
+        "Type": "BaseDatosTPC.Relacion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Relacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRelacion",
+    "Method": "Get",
+    "RelativePath": "api/ControladorRelacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorRelacion",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorRelacion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "R",
+        "Type": "BaseDatosTPC.Relacion",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Relacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorTicket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorTicket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID_Ticket",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fecha_Creacion_OC",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id_Usuario",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id_U",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ID_Proveedor",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Detalle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Solped",
+        "Type": "System.Nullable\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id_OE",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "N_OE",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Numero_OC",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fecha_OC_Recepcionada",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fecha_OC_Enviada",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fecha_OC_Liberada",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Activado",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Ticket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "Get",
+    "RelativePath": "api/ControladorTicket/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorTicket/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "T",
+        "Type": "BaseDatosTPC.Ticket",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Ticket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorTicket/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Ticket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "GetArchivo",
+    "RelativePath": "api/ControladorTicket/Archivo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Archivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "EstadoTicket",
+    "RelativePath": "api/ControladorTicket/Estado/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Ticket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "ListaOC",
+    "RelativePath": "api/ControladorTicket/ListaOC/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.OrdenCompra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "RecepcionTotal",
+    "RelativePath": "api/ControladorTicket/RecepcionTotal/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "GetAllUsuario",
+    "RelativePath": "api/ControladorTicket/Usuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorUsuario",
+    "Method": "GetAll",
+    "RelativePath": "api/ControladorUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorUsuario",
+    "Method": "Nuevo",
+    "RelativePath": "api/ControladorUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "U",
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorUsuario",
+    "Method": "Get",
+    "RelativePath": "api/ControladorUsuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorUsuario",
+    "Method": "Modificar",
+    "RelativePath": "api/ControladorUsuario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "U",
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorUsuario",
+    "Method": "Eliminar",
+    "RelativePath": "api/ControladorUsuario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClasesBaseDatosTPC.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorUsuario",
+    "Method": "DescargarExcel",
+    "RelativePath": "api/ControladorUsuario/Imprimir",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

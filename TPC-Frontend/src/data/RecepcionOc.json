@@ -1,0 +1,37 @@
+[
+    {
+        "ticket": "2",
+        "oc": "2",
+        "fechaCreacion": "2021-08-01",
+        "proveedor": "Proveedor 1",
+        "ceco": "CECO 1"
+    },
+    {
+        "ticket": "123457",
+        "oc": "123457",
+        "fechaCreacion": "2021-08-01",
+        "proveedor": "Proveedor 2",
+        "ceco": "CECO 2"
+    },
+    {
+        "ticket": "123458",
+        "oc": "123458",
+        "fechaCreacion": "2021-08-01",
+        "proveedor": "Proveedor 3",
+        "ceco": "CECO 3"
+    },
+    {
+        "ticket": "123459",
+        "oc": "123459",
+        "fechaCreacion": "2021-08-01",
+        "proveedor": "Proveedor 4",
+        "ceco": "CECO 4"
+    },
+    {
+        "ticket": "123460",
+        "oc": "123460",
+        "fechaCreacion": "2021-08-01",
+        "proveedor": "Proveedor 5",
+        "ceco": "CECO 5"
+    }
+]

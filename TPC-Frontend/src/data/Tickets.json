@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "ticket": "1",
+        "type": "Solicitud con Solped",
+        "status": "Enviado",
+        "solped": "1",
+        "fecha": "2021-01-01"
+    },
+    {
+        "id": 2,
+        "type": "Solicitud con Solped",
+        "ticket": "2",
+        "status": "Enviado",
+        "solped": "2",
+        "fecha": "2021-01-02"
+    },
+    {
+        "id": 3,
+        "type": "Solicitud con Solped",
+        "ticket": "3",
+        "status": "Enviado",
+        "solped": "3",
+        "fecha": "2021-01-03"
+    },
+    {
+        "id": 4,
+        "type": "Solicitud sin Solped",
+        "ticket": "4",
+        "status": "Entregado",
+        "detalle": "Detalle de Solicitud",
+        "bien_servicio": "Pescadores",
+        "fecha": "2021-01-04"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Id_Usuario": 1,
+        "Nombre_Usuario": "Kevin",
+        "Apellido_Paterno": "Gonzalez",
+        "Apellido_Materno": "Gonzalez",
+        "Correo_Usuario": "kevinomg9@gmail.com",
+        "Departamento": "Desarrollo",
+        "rol": "Admin",
+        "Centro_Costo": "Desarrollo"
+    },
+    {
+        "Id_Usuario": 2,
+        "Nombre_Usuario": "Juan",
+        "Apellido_Paterno": "Perez",
+        "Apellido_Materno": "Gonzalez",
+        "Correo_Usuario": "juan@gmail.com",
+        "Departamento": "Desarrollo",
+        "rol": "Usuario",
+        "Centro_Costo": "Contabilidad"
+    },
+    {
+        "Id_Usuario": 3,
+        "Nombre_Usuario": "Pedro",
+        "Apellido_Paterno": "Gonzalez",
+        "Apellido_Materno": "Gonzalez",
+        "Correo_Usuario": "pedro@gmail.com",
+        "Departamento": "Desarrollo",
+        "rol": "Usuario",
+        "Centro_Costo": "Marketing"
+    }
+]

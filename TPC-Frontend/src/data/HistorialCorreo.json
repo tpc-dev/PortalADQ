@@ -1,0 +1,57 @@
+[
+    {
+        "ticket": "123456",
+        "oc": "123456",
+        "usuario": "Juan Perez",
+        "fechaEnvio": "2021-08-01",
+        "fechaRespuesta": "2021-08-02",
+        "respuesta": "Respuesta del proveedor",
+        "proveedor": "Proveedor 1",
+        "ceco": "CECO 1",
+        "comentarios": "Comentarios del usuario"
+    },
+    {
+        "ticket": "123457",
+        "oc": "123457",
+        "usuario": "Juan Perez",
+        "fechaEnvio": "2021-08-01",
+        "fechaRespuesta": "2021-08-02",
+        "respuesta": "Respuesta del proveedor",
+        "proveedor": "Proveedor 2",
+        "ceco": "CECO 2",
+        "comentarios": "Comentarios del usuario"
+    },
+    {
+        "ticket": "123458",
+        "oc": "123458",
+        "usuario": "Juan Perez",
+        "fechaEnvio": "2021-08-01",
+        "fechaRespuesta": "2021-08-02",
+        "respuesta": "Respuesta del proveedor",
+        "proveedor": "Proveedor 3",
+        "ceco": "CECO 3",
+        "comentarios": "Comentarios del usuario"
+    },
+    {
+        "ticket": "123459",
+        "oc": "123459",
+        "usuario": "Juan Perez",
+        "fechaEnvio": "2021-08-01",
+        "fechaRespuesta": "2021-08-02",
+        "respuesta": "Respuesta del proveedor",
+        "proveedor": "Proveedor 4",
+        "ceco": "CECO 4",
+        "comentarios": "Comentarios del usuario"
+    },
+    {
+        "ticket": "123460",
+        "oc": "123460",
+        "usuario": "Juan Perez",
+        "fechaEnvio": "2021-08-01",
+        "fechaRespuesta": "2021-08-02",
+        "respuesta": "Respuesta del proveedor",
+        "proveedor": "Proveedor 5",
+        "ceco": "CECO 5",
+        "comentarios": "Comentarios del usuario"
+    }
+]

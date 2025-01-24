@@ -1,0 +1,37 @@
+[
+    {
+        "id_Orden_Estadistica": 1,
+        "Nombre": "Orden de Compra 1",
+        "Codigo_Nave": "Nave 1",
+        "Centro_de_Costo": "Centro de Costo 1",
+        "id_Orden_Compra": 1
+    },
+    {
+        "id_Orden_Estadistica": 2,
+        "Nombre": "Orden de Compra 2",
+        "Codigo_Nave": "Nave 2",
+        "Centro_de_Costo": "Centro de Costo 2",
+        "id_Orden_Compra": 2
+    },
+    {
+        "id_Orden_Estadistica": 3,
+        "Nombre": "Orden de Compra 3",
+        "Codigo_Nave": "Nave 3",
+        "Centro_de_Costo": "Centro de Costo 3",
+        "id_Orden_Compra": 3
+    },
+    {
+        "id_Orden_Estadistica": 4,
+        "Nombre": "Orden de Compra 4",
+        "Codigo_Nave": "Nave 4",
+        "Centro_de_Costo": "Centro de Costo 4",
+        "id_Orden_Compra": 4
+    },
+    {
+        "id_Orden_Estadistica": 5,
+        "Nombre": "Orden de Compra 5",
+        "Codigo_Nave": "Nave 5",
+        "Centro_de_Costo": "Centro de Costo 5",
+        "id_Orden_Compra": 5
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "vacations": "Juana",
+        "replacer": "Pedro",
+        "comment": "Reemplazo por vacaciones",
+        "end_date": "2021-07-30"
+    },
+    {
+        "id": 2,
+        "vacations": "Pedro",
+        "replacer": "Juana",
+        "comment": "Reemplazo por vacaciones",
+        "end_date": "2021-07-30"
+    },
+    {
+        "id": 3,
+        "vacations": "Juana",
+        "replacer": "Pedro",
+        "comment": "Reemplazo por vacaciones",
+        "end_date": "2021-07-30"
+    }
+]
