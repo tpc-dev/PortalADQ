@@ -35,5 +35,7 @@
     "react-query": "^3.39.3",
     "react-resize-detector": "^11.0.1",
     "tailwindcss": "^3.4.10"
-  }
+  },
+  "main": "gatsby-browser.js",
+  "license": "ISC"
 }
