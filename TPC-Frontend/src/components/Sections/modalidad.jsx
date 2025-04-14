@@ -13,9 +13,18 @@ function Modalidad({ Form, nextStep, setModalidadState, modalidadState, tipoSoli
     const Providers = useProviders(); 
     const OrdenesEstadisticas = useOrdenesEstadisticas(); 
     const handleModalidad = ({ target }) => { const value = target.value; setModalidadState(value); 
-    };
+    };const [localFile, setLocalFile] = useState(null);
+
  const handleFileChange = (e) => { 
+    
     const file = e.target.files[0]; setFile(file); 
+    if (file) {
+        setFile(file);
+        console.log("Archivo seleccionado:", file); // Opcional: para depuración
+      } else {
+        setFile(null);
+        console.log("No se seleccionó ningún archivo."); // Opcional: para depuración
+      }
 };
  return (
         <div>
@@ -185,19 +194,7 @@ function Modalidad({ Form, nextStep, setModalidadState, modalidadState, tipoSoli
                             <Input type='file' onChange={handleFileChange} className="h-10" /> 
                             </Form.Item>
                                     </div>
-                                    
-                                    {/* <div className='grid grid-cols-2 w-full items-center'>
-                                        <p>
-                                            Otros Archivos
-                                        </p>
-                                        <Form.Item name="other_archives" className='mb-0'>
-                                            <Dragger>
-                                                <p className="ant-upload-drag-icon">
-                                                    <InboxOutlined size={10} />
-                                                </p>
-                                            </Dragger>
-                                        </Form.Item>
-                                    </div> */}
+                                   
                                 </>
                             }
 

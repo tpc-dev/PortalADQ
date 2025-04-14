@@ -10,7 +10,7 @@ namespace BaseDatosTPC
 
         public string? Estado { get; set; }
 
-        public DateTime Fecha_Creacion_OC { get; set; }
+        public DateTime? Fecha_Creacion_OC { get; set; }
 
         public string? Id_Usuario { get; set; }
 

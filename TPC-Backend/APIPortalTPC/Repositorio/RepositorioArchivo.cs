@@ -153,7 +153,7 @@ namespace APIPortalTPC.Repositorio
                     "WHERE Id_Archivo = @Id_Archivo";
                 Comm.CommandType = CommandType.Text;
                 Comm.Parameters.Add("@Id_Archivo", SqlDbType.Int).Value = A.Id_Archivo;
-                Comm.Parameters.Add("@NombreDoc", SqlDbType.VarChar,50).Value = A.NombreDoc;
+                Comm.Parameters.Add("@NombreDoc", SqlDbType.VarChar,1000).Value = A.NombreDoc;
                 Comm.Parameters.Add("@ArchivoDoc", SqlDbType.VarBinary).Value = A.ArchivoDoc;
 
                 // Crear un objeto de la clase Archivo
@@ -199,7 +199,7 @@ namespace APIPortalTPC.Repositorio
                     "SELECT SCOPE_IDENTITY() AS Id_Archivo";
                 Comm.CommandType = CommandType.Text;
                 Comm.Parameters.Add("@Id_Archivo", SqlDbType.Int).Value = A.Id_Archivo;
-                Comm.Parameters.Add("@NombreDoc", SqlDbType.VarChar, 50).Value = A.NombreDoc;
+                Comm.Parameters.Add("@NombreDoc", SqlDbType.VarChar, 1000).Value = A.NombreDoc;
                 Comm.Parameters.Add("@ArchivoDoc",SqlDbType.VarBinary).Value = A.ArchivoDoc;
                 decimal idDecimal = (decimal)await Comm.ExecuteScalarAsync();
         

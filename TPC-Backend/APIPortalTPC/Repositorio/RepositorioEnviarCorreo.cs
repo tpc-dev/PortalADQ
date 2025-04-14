@@ -282,7 +282,7 @@ namespace APIPortalTPC.Repositorio
                         smtpClient.EnableSsl = false; // Ajusta esto si es necesario
 
                         // Enviar el mensaje
-                        smtpClient.Send(mail);
+                        //smtpClient.Send(mail);
                     }
                 }
 

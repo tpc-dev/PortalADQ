@@ -37,5 +37,6 @@
     "tailwindcss": "^3.4.10"
   },
   "main": "gatsby-browser.js",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }

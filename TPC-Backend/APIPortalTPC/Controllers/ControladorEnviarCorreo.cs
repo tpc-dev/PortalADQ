@@ -110,7 +110,7 @@ namespace APIPortalTPC.Controllers
                     {
                         //Dejar que el departamento Todos sea el 9
                         Liberadores lib = await IRL.Get(9);
-                        await IEC.CorreoLiberador(U, subject);
+                       await IEC.CorreoLiberador(U, subject);
                     }
                 }
          

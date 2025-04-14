@@ -517,6 +517,11 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "IdS",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "ID_Cotizacion",
         "Type": "System.Int32",
         "IsRequired": false
@@ -524,11 +529,6 @@
       {
         "Name": "Id_Solicitante",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "IdS",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -1932,109 +1932,13 @@
   },
   {
     "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
-    "Method": "Nuevo",
+    "Method": "PostFormData",
     "RelativePath": "api/ControladorTicket",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ID_Ticket",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Estado",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Fecha_Creacion_OC",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "Id_Usuario",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Id_U",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "ID_Proveedor",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Detalle",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Solped",
-        "Type": "System.Nullable\u00601[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Id_OE",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "N_OE",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Numero_OC",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Fecha_OC_Recepcionada",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Fecha_OC_Enviada",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Fecha_OC_Liberada",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Activado",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "file",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "fileName",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BaseDatosTPC.Ticket",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",

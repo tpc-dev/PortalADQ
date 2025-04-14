@@ -1,11 +1,8 @@
 ﻿using APIPortalTPC.Repositorio;
 using BaseDatosTPC;
-using ClasesBaseDatosTPC;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NPOI.SS.Formula.Functions;
-using Org.BouncyCastle.Crypto;
-using System.Collections.Generic;
+using System.Net.Http.Headers;
 /*
  * Este controlador permite conectar Base datos y el repositorio correspondiente para ejecutar los metodos necesarios
  * **/
@@ -83,50 +80,93 @@ namespace APIPortalTPC.Controllers
         /// <param name="T">Objeto del tipo Ticket que se quiere agregar a la base de datos</param>
         /// <returns>Retorna el objeto Ticket que se agrego a la base de datos</returns>
         [HttpPost]
-        public async Task<ActionResult<Ticket>> Nuevo(Archivo_Ticket T)
+
+        public async Task<IActionResult> PostFormData()
         {
-            Console.WriteLine("Estoy aqui");
             try
             {
-                if (T == null)
-                    return BadRequest();
-
-                Ticket nuevo =new Ticket
+                // Acceder a los campos de texto
+                string fileName = Request.Form["fileName"].ToString();
+                string solped = Request.Form["solped"].ToString();
+                int numeroInt;
+                long numeroLong;
+                // Paso 1: Convertir string a int
+                if (int.TryParse(solped, out numeroInt))
                 {
-                    Estado= T.Estado,
-                    Fecha_Creacion_OC=T.Fecha_Creacion_OC,
-                    Id_Usuario=T.Id_Usuario,
-                    ID_Proveedor= T.ID_Proveedor, 
-                    Fecha_OC_Recepcionada= T.Fecha_OC_Recepcionada, 
-                    Fecha_OC_Enviada= T.Fecha_OC_Enviada, 
-                    Fecha_OC_Liberada= T.Fecha_OC_Liberada, 
-                    Detalle= T.Detalle ?? " ", 
-                    Solped=T.Solped ?? 0, 
-                    Id_OE= T.Id_OE
-                };
-                nuevo = await RT.NewTicket(nuevo);
-
-                using (var memoryStream = new MemoryStream())
-                {
-                    await T.file.CopyToAsync(memoryStream);
-                    //guardamos el archivo y cambiamos el estado de la cotizacion 
-                    Archivo A = new Archivo();
-                    A.ArchivoDoc = memoryStream.ToArray();
-                    A.NombreDoc = T.fileName.Trim();
-                    A = await IRA.NuevoArchivo(A);
-                    Id_RelacionTicket R = new Id_RelacionTicket();
-                    //pasaaaaaaarl ID Ticket y archivo
-                    R.Id_Ticket = (nuevo.ID_Ticket);
-                    R.Id_Archivo = A.Id_Archivo;
-                    await IRRT.NuevaRelacion(R);
+                    numeroLong = (long)numeroInt;
                 }
-                return nuevo;
+                else
+                {
+                    numeroLong = 0;
+                }
+                string idProveedor = Request.Form["Id_Proveedor"].ToString();
+                string idOE = Request.Form["Id_OE"].ToString();
+                string estado = Request.Form["Estado"].ToString();
+                string idUsuario = Request.Form["Id_Usuario"].ToString();
+                string detalle = Request.Form["Detalle"].ToString();
+                Ticket nuevo = new Ticket
+
+                {
+
+                    Estado = estado,
+
+                    Fecha_Creacion_OC = null,
+
+                    Id_Usuario = idUsuario,
+
+                    ID_Proveedor = idProveedor,
+
+                    Fecha_OC_Recepcionada = null,
+
+                    Fecha_OC_Enviada = null,
+
+                    Fecha_OC_Liberada = null,
+
+                    Detalle = detalle,
+
+                    Solped = numeroLong,
+
+                    Id_OE = idOE
+
+                };
+                // se guarda el ticket
+                 nuevo = await RT.NewTicket(nuevo);
+                // Acceder al archivo
+                var file = Request.Form.Files["file"];
+      
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await file.CopyToAsync(memoryStream);
+
+                        // guardamos el archivo y cambiamos el estado de la cotizacion
+                        Archivo A = new Archivo();
+                        A.ArchivoDoc = memoryStream.ToArray();
+                        // Asumiendo que fileName también lo obtienes del Request.Form
+                        A.NombreDoc = Request.Form["fileName"].ToString().Trim();
+
+                        A = await IRA.NuevoArchivo(A);
+
+                        Id_RelacionTicket R = new Id_RelacionTicket();
+                        // pasaaaaaaarl ID Ticket y archivo
+                        R.Id_Ticket = (nuevo.ID_Ticket); // Asegúrate de que 'nuevo' esté definido y tenga la propiedad ID_Ticket
+                        R.Id_Archivo = A.Id_Archivo;
+
+                        await IRRT.NuevaRelacion(R);
+
+                        // Aquí podrías agregar lógica adicional, como cambiar el estado de la cotización.
+                    }
+                
+
+                return Ok(nuevo); 
+
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error de " + ex);
+                // Manejar errores
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
             }
         }
+
 
         /// <summary>
         /// Metodo asincrónico para modificar un objeto por ID
@@ -340,12 +380,15 @@ namespace APIPortalTPC.Controllers
         [HttpGet("Archivo/{id:int}")]
         public async Task<ActionResult<Archivo>> GetArchivo(int id)
         {
+            Console.WriteLine(id);
             try
             {
                 Id_RelacionTicket R = await IRRT.GetRelacion(id);
+                Console.WriteLine("Rangu?",R.IdRelacionTicket);
+                //
                 Archivo A = await IRA.GetArchivo((int)R.Id_Archivo);
 
-                return A;
+                return Ok(A);
             }
             catch (Exception ex)
             {
