@@ -98,7 +98,7 @@ namespace APIPortalTPC.Controllers
                     await IRDU.Nuevo(DU);
                     nuevo = await RU.ActivarUsuario(nuevo);
                     await RU.ModificarUsuario(nuevo);
-                    await IEC.CorreoUsuarioPass(nuevo);
+               await IEC.CorreoUsuarioPass(nuevo);
                     return nuevo;
                 }
                 else

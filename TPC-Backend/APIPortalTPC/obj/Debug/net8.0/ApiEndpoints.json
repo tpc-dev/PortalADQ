@@ -1646,6 +1646,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorProveedores",
+    "Method": "Example",
+    "RelativePath": "api/ControladorProveedores/Example",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Archivo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APIPortalTPC.Controllers.ControladorRecepcion",
     "Method": "GetAll",
     "RelativePath": "api/ControladorRecepcion",
@@ -2056,6 +2076,26 @@
     "ReturnTypes": [
       {
         "Type": "BaseDatosTPC.Ticket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIPortalTPC.Controllers.ControladorTicket",
+    "Method": "ExampleOC",
+    "RelativePath": "api/ControladorTicket/ExampleOC",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BaseDatosTPC.Archivo",
         "MediaTypes": [
           "text/plain",
           "application/json",

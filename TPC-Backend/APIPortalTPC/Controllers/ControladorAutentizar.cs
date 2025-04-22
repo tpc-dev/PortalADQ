@@ -46,7 +46,7 @@ namespace APIPortalTPC.Controllers
             {
                 int codigo = await RA.MFA(User.Correo_Usuario);
                 User.CodigoMFA = codigo;
-               await RU.ModificarUsuario(User);
+                await RU.ModificarUsuario(User);
             return User;
             }
             return NotFound("Usuario no activado");
@@ -127,7 +127,7 @@ namespace APIPortalTPC.Controllers
                     int newpass = random.Next(100000, 999999);
                     U.Contraseña_Usuario = newpass.ToString();
                     U.CodigoMFA = 1;
-                    await IEC.RecuperarPass(U);
+                 await IEC.RecuperarPass(U);
                     U = await RU.ModificarUsuario(U);
    
                     return Ok(U);

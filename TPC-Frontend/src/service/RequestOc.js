@@ -11,6 +11,7 @@ class RequestOCService {
     deleteOC = (id) => instance.delete(`/API/ControladorOrdenCompra/${id}`)
     RecepcionTotal = (id) => instance.post(`/API/ControladorTicket/RecepcionTotal/${parseInt(id)}`);
     Archivo = (id) => instance.get(`/API/ControladorTicket/Archivo/${id}`);
+    ExampleOC  = (id) => instance.get(`/API/ControladorTicket/ExampleOC`);
 }
 
 const RequestOC = new RequestOCService();

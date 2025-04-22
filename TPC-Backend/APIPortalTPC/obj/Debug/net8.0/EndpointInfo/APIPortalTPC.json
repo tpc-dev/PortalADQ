@@ -2698,6 +2698,35 @@
         }
       }
     },
+    "/api/ControladorProveedores/Example": {
+      "get": {
+        "tags": [
+          "ControladorProveedores"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseDatosTPC.Archivo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseDatosTPC.Archivo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseDatosTPC.Archivo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/ControladorRecepcion": {
       "get": {
         "tags": [
@@ -3431,6 +3460,35 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseDatosTPC.Archivo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseDatosTPC.Archivo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BaseDatosTPC.Archivo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ControladorTicket/ExampleOC": {
+      "get": {
+        "tags": [
+          "ControladorTicket"
         ],
         "responses": {
           "200": {

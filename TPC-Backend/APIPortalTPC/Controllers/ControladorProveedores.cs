@@ -165,5 +165,40 @@ namespace APIPortalTPC.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error actualizando datos" + ex);
             }
         }
+
+        [HttpGet("Example")]
+        public async Task<ActionResult<Archivo>> Example()
+        {
+            try
+            {
+                // Obtiene la ruta completa al archivo Excel
+                string rutaArchivo = Path.Combine(Directory.GetCurrentDirectory(), "Ejemplo", "ejemploProveedor.xlsx");
+
+                // Verifica si el archivo existe
+                if (!System.IO.File.Exists(rutaArchivo))
+                {
+                    return NotFound($"El archivo Excel no se encontró en la ruta: {rutaArchivo}");
+                }
+
+                // Lee el contenido del archivo Excel como un array de bytes
+                byte[] archivoBytes = await System.IO.File.ReadAllBytesAsync(rutaArchivo);
+
+                // Crea el objeto Archivo
+                var archivoObjeto = new Archivo
+                {
+                    Id_Archivo = 0,
+                    ArchivoDoc = archivoBytes,
+                    NombreDoc = "ejemploProveedor.xlsx"
+                };
+
+                return Ok(archivoObjeto); // Devuelve el objeto Archivo
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error al leer el archivo Excel: {ex.Message}");
+            }
+        }
     }
+
+
 }

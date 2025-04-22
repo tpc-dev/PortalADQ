@@ -2,6 +2,7 @@
 using BaseDatosTPC;
 using Microsoft.AspNetCore.Mvc;
 using NPOI.SS.Formula.Functions;
+using OfficeOpenXml;
 using System.Net.Http.Headers;
 /*
  * Este controlador permite conectar Base datos y el repositorio correspondiente para ejecutar los metodos necesarios
@@ -395,7 +396,40 @@ namespace APIPortalTPC.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error sacando archivo: " + ex);
             }
         }
+        [HttpGet("ExampleOC")]
+        public async Task<ActionResult<Archivo>> ExampleOC()
+        {
+            try
+            {
+                // Obtiene la ruta completa al archivo Excel
+                string rutaArchivo = Path.Combine(Directory.GetCurrentDirectory(), "Ejemplo", "ejemploOC.xls");
 
+                // Verifica si el archivo existe
+                if (!System.IO.File.Exists(rutaArchivo))
+                {
+                    return NotFound($"El archivo Excel no se encontró en la ruta: {rutaArchivo}");
+                }
 
+                // Lee el contenido del archivo Excel como un array de bytes
+                byte[] archivoBytes = await System.IO.File.ReadAllBytesAsync(rutaArchivo);
+
+                // Crea el objeto Archivo
+                var archivoObjeto = new Archivo
+                {
+                    Id_Archivo = 0,
+                    ArchivoDoc = archivoBytes,
+                    NombreDoc = "ejemploOC.xls"
+                };
+
+                return Ok(archivoObjeto); // Devuelve el objeto Archivo
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error al leer el archivo Excel: {ex.Message}");
+            }
+        }
     }
+
+
+
 }

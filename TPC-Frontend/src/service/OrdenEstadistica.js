@@ -6,6 +6,7 @@ class OrdenEstadisticaService {
     create = (data) => instance.post('/API/ControladorOrdenesEstadisticas', data);
     update = (id, data) => instance.put(`/API/ControladorOrdenesEstadisticas/${id}`, data);
     delete = (id, data) => instance.delete(`/API/ControladorOrdenesEstadisticas/${id}`, data);
+    example =() => console.log("Enviado")//instance.get('/API/ControladorOrdenesEstadisticas/Example');
 
 
 }
