@@ -27,8 +27,6 @@ function RequestOC() {
 
     const { user } = useAuthContext()
 
-
-
     const { data, isLoading, isSuccess, isError, refetch } = useRequestOC()
 
     console.log(data)
@@ -42,7 +40,6 @@ function RequestOC() {
         ticket: ''
     })
 
-
     const handleSearch = e => {
         const ticket = normalizeText(e.target.value)
         const result = data.filter(t => normalizeText(t.estado.toString()).includes(ticket) || normalizeText(t.iD_Ticket.toString()).includes(ticket) || normalizeText(t.solped.toString()).includes(ticket) || normalizeText(t.id_OE.toString()).includes(ticket) || normalizeText(t.numero_OC.toString()).includes(ticket) || normalizeText(t.iD_Proveedor.toString()).includes(ticket) || normalizeText(t.detalle).includes(ticket))
@@ -51,7 +48,6 @@ function RequestOC() {
             ticket
         })
     }
-
 
     const handleSearchBetweenDates = (date1, date2) => {
         if (!date1 || !date2) {
@@ -72,7 +68,6 @@ function RequestOC() {
         })
     }
 
-
     const openNotification = () => {
         const key = `open${Date.now()}`;
         const btn = (
@@ -80,47 +75,35 @@ function RequestOC() {
                 <Button type="link" size="small" onClick={() => api.destroy()}>
                     Cerrar
                 </Button>
-
             </Space>
         );
         api.open({
             message: 'OC Pendiente',
-            description:
-                'Tienes Ordenes de compras pendientes por liberar',
+            description: 'Tienes Ordenes de compras pendientes por liberar',
             btn,
             key,
-
         });
     };
 
-
     const RecepcionTotal = async (ticket) => {
-
         try {
-
             RequestOCService.RecepcionTotal(ticket.iD_Ticket)
                 .then(response => {
                     console.log(response)
                     alertSuccess({ message: 'Recepcion realizada con éxito' })
                     refetch()
                 })
-
-
         } catch (e) {
             console.log(e)
         }
-
     }
 
-
     const handleView = async (record) => {
-       
-  
-       try {
+        try {
             const response = await RequestOC2.Archivo(record.iD_Ticket);
             const data = response.archivoDoc;
             const fileName = response.nombreDoc.trim();
-    
+
             // Verificar que `data` es un array de bytes o una cadena base64
             let byteArray;
             if (typeof data === 'string') {
@@ -135,7 +118,7 @@ function RequestOC() {
                 // Si ya es un array de bytes, usarlo directamente
                 byteArray = data;
             }
-    
+
             // Mapear extensiones a tipos MIME
             const extension = fileName.split('.').pop().toLowerCase();
             const mimeTypes = {
@@ -144,33 +127,28 @@ function RequestOC() {
                 xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 zip: 'application/zip',
                 doc: 'application/msword',
-                docx : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-                 
-
+                docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
                 // ... agregar más tipos MIME según sea necesario
             };
             const contentType = mimeTypes[extension] || 'application/octet-stream';
-    
+
             // Crear el Blob y descargar el archivo
             const blob = new Blob([byteArray], { type: contentType });
             saveAs(blob, fileName);
-    
+
         } catch (error) {
             console.error('Error al descargar el archivo:', error);
             alert('Hubo un error al descargar el archivo. Por favor, inténtalo de nuevo más tarde.');
         }
     };
 
-
     const columns = [
         { title: 'Nº Ticket', dataIndex: 'iD_Ticket', key: 'iD_Ticket', align: 'left', responsive: ['md'] },
-        // { title: 'Tipo de solicitud', dataIndex: 'type', key: 'type', align: 'left', responsive: ['md'] },
         {
             title: 'Estado', dataIndex: 'estado', key: 'estado', align: 'center', render: (text, record) => <StatusText status={record.estado} />, filters: Status.map(status => ({ text: status.name, value: status.name })),
             onFilter: (value, record) => record.estado.includes(value),
             filterMode: 'tree',
             filterSearch: true,
-            //filtrar por defecto,
             defaultFilteredValue: user.isAdmin ? ['Espera liberacion', 'Recibido', 'OC Liberada', 'OC Enviada'] : ['Espera liberacion', 'Recibido', 'OC Liberada', 'OC Enviada', 'OC Parcial', 'OC No Recepcionada']
         },
         { title: 'Fecha', dataIndex: 'fecha_Creacion_OC', key: 'fecha_Creacion_OC', align: 'center', responsive: ['md'], render: (text, record) => new Date(record.fecha_Creacion_OC).toLocaleDateString() },
@@ -186,8 +164,7 @@ function RequestOC() {
             onFilter: (value, record) => record.iD_Proveedor.includes(value),
             filterMode: 'tree',
             filterSearch: true,
-
-        }, // Falta Numero de id
+        },
         { title: 'Detalle', dataIndex: 'detalle', key: 'detail', align: 'center' },
         {
             title: 'Recepcion', key: 'recepcion', align: 'center', render: (text, record) => {
@@ -219,7 +196,6 @@ function RequestOC() {
                 <Button icon={<EyeOutlined />} onClick={() => handleView(record)} />
             )
         },
-      
         {
             title: 'Ver', key: 'detail', align: 'center', responsive: ['md'], render: (text, record) =>
                 <div className='flex justify-center gap-2'>
@@ -230,7 +206,6 @@ function RequestOC() {
                     </Button>
                 </div>
         },
-
         {
             title: 'Acciones', key: 'actions', align: 'center', render: (text, record) => <Actions Solicitud={record} refetch={refetch} />
         },
@@ -274,9 +249,6 @@ function RequestOC() {
         }
     }, [data])
 
-
-
-
     return (
         <div>
             {contextHolder}
@@ -289,7 +261,6 @@ function RequestOC() {
                         title: 'Solicitudes OC',
                     },
                 ]}
-
                 className='text-sm mb-4'
             />
 
@@ -298,8 +269,11 @@ function RequestOC() {
                     Solicitudes OC
                 </p>
             </div>
-            <div className="flex flex-col lg:flex-row items-center gap-2 mb-4">
-                <div className="flex-1 order-1">
+
+            <div className="flex flex-wrap lg:flex-nowrap  items-center justify-between gap-2 mb-4">
+                {/* Cambio: Se modificó la estructura para usar `flex-wrap` y `justify-between`, mejorando el layout responsivo. - Felipe Guerra Blamey - 2025-04-18 */}
+                <div className=" flex gap-2 flex-shrink-0 min-w-0">
+                    {/* Cambio: Se reemplazó el div anterior (order-1) por uno con `flex-shrink-0 min-w-0` para evitar truncamientos en pantallas pequeñas. - Felipe Guerra Blamey - 2025-04-18 */}
                 </div>
                 {
                     user.isAdmin &&
@@ -310,11 +284,10 @@ function RequestOC() {
                         <Descargar />
                     </div>
                 }
-                <Search onChange={handleSearch} handleSearchBetweenDates={handleSearchBetweenDates} />
-            </div>
-
-            <div>
-
+                <div className="flex-1 min-w-0 ">
+                    {/* Cambio: Se encapsuló el componente Search en un div con `flex-1 min-w-0` para asegurar que se expanda adecuadamente. - Felipe Guerra Blamey - 2025-04-18 */}
+                    <Search onChange={handleSearch} handleSearchBetweenDates={handleSearchBetweenDates} />
+                </div>
             </div>
 
             <Table
