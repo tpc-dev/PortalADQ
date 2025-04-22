@@ -3,20 +3,70 @@
   "WorkspaceRootPath": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositorioenviarcorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositorioenviarcorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorautentizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorautentizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositorioautentizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositorioautentizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorenviarcorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorenviarcorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositorioexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositorioexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05DF5EAA-278D-4064-B41E-C7B8C1443CA0}|..\\BaseDatosTPC\\BaseDatosTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\basedatostpc\\ordenesestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositoriocorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositoriocorreo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositorioordenesestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositorioordenesestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05DF5EAA-278D-4064-B41E-C7B8C1443CA0}|..\\BaseDatosTPC\\BaseDatosTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\basedatostpc\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositorioidrelacionticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositorioidrelacionticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\repositorio\\repositorioarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:repositorio\\repositorioarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|c:\\users\\drako\\onedrive\\documentos\\github\\portaladq\\tpc-backend\\apiportaltpc\\controllers\\controladorcotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FC5975-CAAA-401D-B0C8-4048734450CA}|APIPortalTPC.csproj|solutionrelative:controllers\\controladorcotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +76,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,54 +96,223 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RepositorioEnviarCorreo.cs",
-              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioEnviarCorreo.cs",
-              "RelativeDocumentMoniker": "Repositorio\\RepositorioEnviarCorreo.cs",
-              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioEnviarCorreo.cs",
-              "RelativeToolTip": "Repositorio\\RepositorioEnviarCorreo.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAApwMwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:20:33.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RepositorioAutentizar.cs",
-              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioAutentizar.cs",
-              "RelativeDocumentMoniker": "Repositorio\\RepositorioAutentizar.cs",
-              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioAutentizar.cs",
-              "RelativeToolTip": "Repositorio\\RepositorioAutentizar.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAApwGwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:19:57.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-24T13:53:37.517Z",
+              "WhenOpened": "2025-04-22T18:40:34.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "RepositorioExcel.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioExcel.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RepositorioExcel.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioExcel.cs",
+              "RelativeToolTip": "Repositorio\\RepositorioExcel.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAhwGcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:37:45.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RepositorioOrdenesEstadisticas.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioOrdenesEstadisticas.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RepositorioOrdenesEstadisticas.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioOrdenesEstadisticas.cs",
+              "RelativeToolTip": "Repositorio\\RepositorioOrdenesEstadisticas.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAhwKQAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:36:35.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RepositorioCorreo.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioCorreo.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RepositorioCorreo.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioCorreo.cs",
+              "RelativeToolTip": "Repositorio\\RepositorioCorreo.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAhwK4AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:36:33.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrdenesEstadisticas.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\BaseDatosTPC\\OrdenesEstadisticas.cs",
+              "RelativeDocumentMoniker": "..\\BaseDatosTPC\\OrdenesEstadisticas.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\BaseDatosTPC\\OrdenesEstadisticas.cs",
+              "RelativeToolTip": "..\\BaseDatosTPC\\OrdenesEstadisticas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:36:32.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ControladorExcel.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorExcel.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorExcel.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorExcel.cs",
+              "RelativeToolTip": "Controllers\\ControladorExcel.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAASwNEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:36:30.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ControladorProveedores.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorProveedores.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorProveedores.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorProveedores.cs",
+              "RelativeToolTip": "Controllers\\ControladorProveedores.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAowKgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T18:25:50.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-24T13:52:22.682Z"
+              "WhenOpened": "2025-04-14T04:19:05.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ControladorUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorUsuario.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorUsuario.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorUsuario.cs",
+              "RelativeToolTip": "Controllers\\ControladorUsuario.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:06:10.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControladorEnviarCorreo.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorEnviarCorreo.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorEnviarCorreo.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorEnviarCorreo.cs",
+              "RelativeToolTip": "Controllers\\ControladorEnviarCorreo.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowDMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:05:40.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControladorAutentizar.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorAutentizar.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorAutentizar.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorAutentizar.cs",
+              "RelativeToolTip": "Controllers\\ControladorAutentizar.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwH8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:04:27.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ControladorCotizacion.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorCotizacion.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorCotizacion.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorCotizacion.cs",
+              "RelativeToolTip": "Controllers\\ControladorCotizacion.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAQwIkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:35:58.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RepositorioArchivo.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioArchivo.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RepositorioArchivo.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioArchivo.cs",
+              "RelativeToolTip": "Repositorio\\RepositorioArchivo.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAJYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:59:41.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Archivo.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\BaseDatosTPC\\Archivo.cs",
+              "RelativeDocumentMoniker": "..\\BaseDatosTPC\\Archivo.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\BaseDatosTPC\\Archivo.cs",
+              "RelativeToolTip": "..\\BaseDatosTPC\\Archivo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:59:29.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ControladorArchivo.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorArchivo.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorArchivo.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorArchivo.cs",
+              "RelativeToolTip": "Controllers\\ControladorArchivo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:59:26.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RepositorioIdRelacionTicket.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioIdRelacionTicket.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RepositorioIdRelacionTicket.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Repositorio\\RepositorioIdRelacionTicket.cs",
+              "RelativeToolTip": "Repositorio\\RepositorioIdRelacionTicket.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAApwGUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:23:03.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ControladorTicket.cs",
+              "DocumentMoniker": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorTicket.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControladorTicket.cs",
+              "ToolTip": "C:\\Users\\drako\\OneDrive\\Documentos\\GitHub\\PortalADQ\\TPC-Backend\\APIPortalTPC\\Controllers\\ControladorTicket.cs",
+              "RelativeToolTip": "Controllers\\ControladorTicket.cs",
+              "ViewState": "AgIAAIUBAAAAAAAAAAAAAJQBAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:22:48.789Z",
+              "EditorCaption": ""
             }
           ]
         }

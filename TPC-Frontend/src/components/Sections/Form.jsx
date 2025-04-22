@@ -29,12 +29,12 @@ function Create() {
 
     const onFinish = async (values) => {
         const formData = new FormData();
-        formData.append('file', file); // Archivo
-        formData.append('fileName', file.name); // Nombre
-    
+
+ 
         try {
             const validatedValues = await form.validateFields();
-    
+            formData.append('file', file); // Archivo
+            formData.append('fileName', file.name); // Nombre
             if (tipoSolicitud === 1) {
                 // Orden de compra
                 formData.append('solped', validatedValues.solped || 0);
@@ -43,11 +43,11 @@ function Create() {
                 formData.append('Estado', 'Recibido');
                 formData.append('Id_Usuario', user.id_Usuario.toString());
                 formData.append('Detalle', validatedValues.detalle || ' ');
-    
                 // Asegúrate de pasar formData correctamente
                 RequestOC.post(formData)
                     .then(response => {
                         if (response.iD_Ticket) {
+                            
                             setStep(step + 1);
                             setSuccesfullData(response);
                             form.resetFields();
@@ -56,6 +56,7 @@ function Create() {
                     .catch(error => {
                         console.error('Error:', error);
                     });
+                    
             } else if (tipoSolicitud === 2) {
                 // Cotización
                 formData.append('Id_Solicitante', user.id_Usuario.toString());

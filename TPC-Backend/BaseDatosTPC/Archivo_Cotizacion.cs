@@ -10,6 +10,7 @@ namespace BaseDatosTPC
 {
     public class Archivo_Cotizacion
     {
+        public int? IdS { get; set; }
         /// <summary>
         /// Identificador unico de la relacion
         /// </summary>
@@ -18,7 +19,7 @@ namespace BaseDatosTPC
         /// Id del usuario que ha solicitado la solicitud
         /// </summary>
         public string? Id_Solicitante { get; set; }
-        public int? IdS { get; set; }
+   
         /// <summary>
         /// Guarda la fecha de creacion
         /// </summary>
@@ -46,8 +47,8 @@ namespace BaseDatosTPC
         /// <summary>
         /// Archivo 
         /// </summary>
-        public IFormFile file { get; set; }
+        public IFormFile? file { get; set; }
 
-        public string fileName { get; set; }
+        public string? fileName { get; set; }
     }
 }

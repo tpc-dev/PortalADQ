@@ -98,8 +98,8 @@ namespace APIPortalTPC.Repositorio
                 while (reader.Read())
                 {
                     R.Id_Archivo = Convert.ToInt32(reader["Id_Archivo"]);
-                    R.Id_Ticket = reader["Id_Ticket"] is DBNull ? 0 : Convert.ToInt32(reader["Id_Ticket"]);
-                    R.IdRelacionTicket = Convert.ToInt32(reader["Id_RelacionTicket"]);
+                    R.Id_Ticket =  Convert.ToInt32(reader["Id_Ticket"]);
+                    R.IdRelacionTicket = Convert.ToInt32(reader["IdRelacionTicket"]);
                 }
             }
             catch (SqlException ex)

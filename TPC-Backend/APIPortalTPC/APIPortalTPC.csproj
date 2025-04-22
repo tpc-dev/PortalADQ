@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\NewFolder\**" />
+    <Content Remove="Properties\NewFolder\**" />
+    <EmbeddedResource Remove="Properties\NewFolder\**" />
+    <None Remove="Properties\NewFolder\**" />
+    <_WebToolingArtifacts Remove="Properties\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Repositorio\RepositorioDepartamentoUsuario.cs~RFae641f8.TMP" />
   </ItemGroup>
 
@@ -26,6 +34,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BaseDatosTPC\BaseDatosTPC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Ejemplo\" />
   </ItemGroup>
 
 </Project>

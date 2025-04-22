@@ -278,3 +278,4 @@ C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\APIPortalTPC\obj
 C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\APIPortalTPC\obj\Debug\net8.0\APIPortalTPC.pdb
 C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\APIPortalTPC\obj\Debug\net8.0\APIPortalTPC.genruntimeconfig.cache
 C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\APIPortalTPC\obj\Debug\net8.0\ref\APIPortalTPC.dll
+C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\APIPortalTPC\obj\Debug\net8.0\APIPortalTPC.sourcelink.json

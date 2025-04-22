@@ -127,7 +127,7 @@ namespace APIPortalTPC.Controllers
                     int newpass = random.Next(100000, 999999);
                     U.Contraseña_Usuario = newpass.ToString();
                     U.CodigoMFA = 1;
-                    await IEC.RecuperarPass(U);
+                 await IEC.RecuperarPass(U);
                     U = await RU.ModificarUsuario(U);
    
                     return Ok(U);

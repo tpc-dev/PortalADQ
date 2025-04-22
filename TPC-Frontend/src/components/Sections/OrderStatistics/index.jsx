@@ -8,6 +8,10 @@ import { isNotEmpty } from '../../../utils/validations'
 import useAuthContext from '../../../hooks/useAuthContext'
 import useOrdenesEstadisticas from '../../../hooks/useOrdenesEstadisticas'
 import Excel from './Excel'
+import { EyeOutlined, LayoutOutlined } from '@ant-design/icons'; 
+import { Button } from 'antd';
+import RequestOC2 from '../../../service/RequestOc'
+import { saveAs } from 'file-saver';
 
 function OrderStatistics() {
 
@@ -30,7 +34,45 @@ function OrderStatistics() {
             order
         })
     }
-
+    const DescargarEjemplo = async () => {
+       
+  
+        try {
+             const response = await RequestOC2.ExampleOC();
+             const data = response.archivoDoc;
+             const fileName = response.nombreDoc.trim();
+     
+             // Verificar que `data` es un array de bytes o una cadena base64
+             let byteArray;
+             if (typeof data === 'string') {
+                 // Si es una cadena base64, decodificarla
+                 const binaryString = atob(data);
+                 const len = binaryString.length;
+                 byteArray = new Uint8Array(len);
+                 for (let i = 0; i < len; i++) {
+                     byteArray[i] = binaryString.charCodeAt(i);
+                 }
+             } else {
+                 // Si ya es un array de bytes, usarlo directamente
+                 byteArray = data;
+             }
+     
+             // Mapear extensiones a tipos MIME
+             const extension = fileName.split('.').pop().toLowerCase();
+             const mimeTypes = {
+                 xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+             };
+             const contentType = mimeTypes[extension] || 'application/octet-stream';
+     
+             // Crear el Blob y descargar el archivo
+             const blob = new Blob([byteArray], { type: contentType });
+             saveAs(blob, fileName);
+     
+         } catch (error) {
+             console.error('Error al descargar el archivo:', error);
+             alert('Hubo un error al descargar el archivo. Por favor, inténtalo de nuevo más tarde.');
+         }
+     };
     const columns = [
         { title: 'Id', dataIndex: 'id_Orden_Estadistica', key: 'id_Orden_Estadistica', align: 'left', responsive: ['md'], defaultSortOrder: 'ascend', sorter: (a, b) => a.id_Orden_Estadistica - b.id_Orden_Estadistica },
         { title: 'Nombre', dataIndex: 'nombre', key: 'nombre', align: 'left', responsive: ['md'] },
@@ -61,14 +103,23 @@ function OrderStatistics() {
                 className='text-sm mb-4'
             />
 
-            <div className='flex flex-col mb-4'>
-                <p className='font-semibold text-lg leading-none'>
-                    Ordenes Estadisticas
-                </p>
+<div className='flex flex-row items-center mb-4'>
+    <p className='font-semibold text-lg leading-none mr-2'>
+        
+        Ordenes Estadisticas
+        
+    </p>
+    <Button icon={<LayoutOutlined />} onClick={DescargarEjemplo}>
+            </Button>
+             
+              
+ 
             </div>
             <div className="flex flex-col lg:flex-row items-center gap-2 mb-4">
                 <div className="flex-1 order-1">
                     <p className="text-sm text-[#556a89]">Listado de Ordenes Estadisticas</p>
+           
+
                 </div>
                 <div className="flex gap-x-2 order-2">
                     {
@@ -77,8 +128,10 @@ function OrderStatistics() {
                             <Create refetch={refetch} />
                             <Excel />
                         </>
+                        
                     }
                 </div>
+
                 <Search onChange={handleSearch} />
             </div>
             <Table

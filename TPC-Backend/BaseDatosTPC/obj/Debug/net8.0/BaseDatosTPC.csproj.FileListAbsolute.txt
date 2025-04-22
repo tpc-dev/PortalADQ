@@ -47,3 +47,4 @@ C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\BaseDatosTPC\obj
 C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\BaseDatosTPC\obj\Debug\net8.0\refint\BaseDatosTPC.dll
 C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\BaseDatosTPC\obj\Debug\net8.0\BaseDatosTPC.pdb
 C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\BaseDatosTPC\obj\Debug\net8.0\ref\BaseDatosTPC.dll
+C:\Users\drako\OneDrive\Documentos\GitHub\PortalADQ\TPC-Backend\BaseDatosTPC\obj\Debug\net8.0\BaseDatosTPC.sourcelink.json

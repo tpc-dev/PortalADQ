@@ -50,7 +50,7 @@ namespace APIPortalTPC.Controllers
                 foreach (int ID in lis)
                  {
                     Proveedores P = await IRP.GetProveedor(ID);
-                    await IEC.CorreoProveedores(P, formData);
+               await IEC.CorreoProveedores(P, formData);
                  }
                 //procede a guardar el correo
                 if (formData.file == null || formData.file.Length == 0) return Ok("Correos enviados con exito"); // no se guarda archivo
@@ -103,14 +103,14 @@ namespace APIPortalTPC.Controllers
                     {
                         Liberadores L = await IRL.GetDep(dep);
                         U = await IRU.GetUsuario(L.Id_Usuario);
-                        await IEC.CorreoLiberador(U, subject);
+                   await IEC.CorreoLiberador(U, subject);
                         enviado = true;
                     }
                     if (enviado)
                     {
                         //Dejar que el departamento Todos sea el 9
                         Liberadores lib = await IRL.Get(9);
-                        await IEC.CorreoLiberador(U, subject);
+                  await IEC.CorreoLiberador(U, subject);
                     }
                 }
          
@@ -152,7 +152,7 @@ namespace APIPortalTPC.Controllers
                     if (U.Activado)
                     {
                     int id = U.Id_Usuario;
-                        await IEC.CorreoRecepciones(U, subject, (int)T.ID_Ticket);
+                   await IEC.CorreoRecepciones(U, subject, (int)T.ID_Ticket);
                         //cambiar estado ticket
                         C.CorreosEnviados += 1;
                         C.Activado = true;
