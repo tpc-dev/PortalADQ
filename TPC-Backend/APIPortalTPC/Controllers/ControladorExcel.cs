@@ -37,7 +37,7 @@ namespace APIPortalTPC.Controllers
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
-        [HttpPost("Proveedor")]
+        [HttpPost("Proveedores")]
         public async Task<ActionResult> ExcelProveedores([FromForm] IFormFile file)
         {
             if (file == null || file.Length == 0)
@@ -72,7 +72,7 @@ namespace APIPortalTPC.Controllers
         /// Metodo que permite leer el excel con el formato que agrega un proveedor a la base de datos
         /// </summary>
         /// <returns></returns>
-        [HttpPost("Proveedores")]
+        [HttpPost("Proveedor")]
         public async Task<ActionResult> ExcelProveedor([FromForm]IFormFile file)
         {
             if (file == null || file.Length == 0)
