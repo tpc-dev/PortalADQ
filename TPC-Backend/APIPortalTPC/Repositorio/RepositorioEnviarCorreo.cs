@@ -252,7 +252,6 @@ namespace APIPortalTPC.Repositorio
             <head></head>
             <body>
             <p style='font-size: 16px; color: #333;'>Estimado/a {U.Nombre_Usuario},</p>
-
                 <p>Su contraseña: </p>
                 <ul>
                 <li>{U.Contraseña_Usuario}</li> 
@@ -282,7 +281,7 @@ namespace APIPortalTPC.Repositorio
                         smtpClient.EnableSsl = false; // Ajusta esto si es necesario
 
                         // Enviar el mensaje
-                        //smtpClient.Send(mail);
+                        smtpClient.Send(mail);
                     }
                 }
 
